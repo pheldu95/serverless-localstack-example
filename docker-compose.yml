@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3.3'
 
 services: 
   localstack:
@@ -8,7 +8,7 @@ services:
       - EDGE_PORT=4566
       - SERVICES=lambda,s3,cloudformation,sts
     ports: 
-      - '4566-4597:4566-4597'
+      - '4566-4583:4566-4583'
     volumes: 
-      - "${TEMPDIR:-/tmp/localstack}:/temp/localstack"
+      - "${TEMPDIR:-/tmp/localstack}:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
