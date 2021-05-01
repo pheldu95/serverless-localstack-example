@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/localstack-lambda/local/1619814838153-2021-04-30T20:33:58.153Z/localstack-lambda.zip"
+                "S3Key": "serverless/localstack-lambda/local/1619886783354-2021-05-01T16:33:03.354Z/localstack-lambda.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "nodejs12.x",
@@ -192,14 +192,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersion4hghPvxaMiiXFzc5duW9or1YaZ4fobRY1LMolNqrY": {
+          "HelloLambdaVersionkVDIPA0IuyDCBC5tADSO1GnrtelkHjg1gNjJNe5dUA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "szL1Tjh8F3GSYGnVjf4qhDqEgx5zi8dpoYsPXdYr9Mg="
+              "CodeSha256": "9lj8GVluIfSr4o2UXU2V+ACGaHyys0zmg6qTTUikqcU="
             }
           }
         },
@@ -215,7 +215,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersion4hghPvxaMiiXFzc5duW9or1YaZ4fobRY1LMolNqrY"
+              "Ref": "HelloLambdaVersionkVDIPA0IuyDCBC5tADSO1GnrtelkHjg1gNjJNe5dUA"
             },
             "Export": {
               "Name": "sls-localstack-lambda-local-HelloLambdaFunctionQualifiedArn"
@@ -331,7 +331,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersion4hghPvxaMiiXFzc5duW9or1YaZ4fobRY1LMolNqrY"
+        "versionLogicalId": "HelloLambdaVersionkVDIPA0IuyDCBC5tADSO1GnrtelkHjg1gNjJNe5dUA"
       }
     },
     "configValidationMode": "warn",
@@ -359,7 +359,7 @@
     "artifact": "/Users/duncanphelps/Documents/Learning/Javascript/servless-localstack-example/serverless-localstack-master/.serverless/localstack-lambda.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/localstack-lambda/local/1619814838153-2021-04-30T20:33:58.153Z",
+    "artifactDirectoryName": "serverless/localstack-lambda/local/1619886783354-2021-05-01T16:33:03.354Z",
     "artifact": "localstack-lambda.zip"
   }
 }
